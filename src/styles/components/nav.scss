@@ -1,18 +1,80 @@
 @use "../variables.scss";
 
-.navbar {
-    ul {
-        display: flex;
-        gap: 1rem;
+header {
+    background-color: variables.$secondary-background-color;
+    padding: 1rem;
+    flex: 0 1 auto;
 
-        a {
-            color: variables.$primary-color;
-            cursor: pointer;
-            transition: color 0.3s;
+    display: flex;
+    justify-content: space-between;
 
-            &:hover {
-                color: variables.$secondary-color;
+    .logo {
+        color: variables.$secondary-color;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    .navbar {
+        ul {
+            display: flex;
+            gap: 1rem;
+
+            a {
+                color: variables.$primary-color;
+                cursor: pointer;
+                transition: color 0.3s;
+
+                &:hover {
+                    color: variables.$secondary-color;
+                }
             }
+        }
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    @media (max-width: 768px) {
+
+        .navbar {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: variables.$secondary-background-color;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            transition: top 0.2s;
+
+            ul {
+                position: relative;
+                width: 80%;
+                height: 100%;
+                margin: 0 auto;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-size: 2em;
+            }
+
+            &.open {
+                top: 0;
+            }
+
+            .close {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+
+        }
+
+        .navigation {
+            display: block;
+            font-size: 22px;
+            display: flex;
         }
     }
 }

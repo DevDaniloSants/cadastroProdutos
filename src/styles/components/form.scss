@@ -42,4 +42,8 @@
         color: red;
         transition: color 0.4s;
     }
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
 }
