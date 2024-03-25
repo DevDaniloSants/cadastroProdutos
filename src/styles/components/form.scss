@@ -1,0 +1,59 @@
+@use "../variables.scss";
+
+.product_form {
+    width: 60%;
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: variables.$secondary-background-color;
+    border-radius: variables.$border-radius;
+    padding: 1rem;
+    gap: 1rem;
+
+    label {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+
+        span {
+            font-weight: 100;
+        }
+
+        input,
+        select {
+            outline: none;
+            background-color: variables.$input-background;
+            border-radius: variables.$border-radius;
+            border: none;
+            padding: 0.5rem;
+            color: variables.$primary-color;
+        }
+    }
+
+    .errors {
+        color: variables.$errorMessage-color;
+        font-size: 14px;
+    }
+
+    .err {
+        border: 1px solid red;
+        color: red;
+        transition: color 0.4s;
+    }
+
+    button {
+        background-color: variables.$secondary-color;
+        border: none;
+        padding: 0.5rem;
+        border-radius: variables.$border-radius;
+        color: variables.$primary-color;
+        cursor: pointer;
+    }
+
+    button:disabled {
+        background-color: red;
+        cursor: default;
+    }
+}

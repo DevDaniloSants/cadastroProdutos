@@ -1,0 +1,18 @@
+@use "../variables.scss";
+
+.navbar {
+    ul {
+        display: flex;
+        gap: 1rem;
+
+        a {
+            color: variables.$primary-color;
+            cursor: pointer;
+            transition: color 0.3s;
+
+            &:hover {
+                color: variables.$secondary-color;
+            }
+        }
+    }
+}
