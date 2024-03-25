@@ -40,16 +40,26 @@ body {
         padding: 1rem;
 
         .description {
-            text-align: center;
+            display: flex;
+            width: 80%;
+            margin: 0 auto;
+            flex-direction: column;
             margin-bottom: 1rem;
 
             h1 {
-                font-size: clamp(36px, 4vw, 48px);
+                text-align: center;
+                font-size: 48px;
                 color: variables.$title-color;
             }
 
             p {
+                text-align: center;
                 font-size: clamp(14px, 1vw, 18px);
+                padding-bottom: 1rem;
+            }
+
+            @media(max-width: 768px){
+                width: 100%;
             }
         }
     }
@@ -60,5 +70,18 @@ body {
 
     a {
         text-decoration: none;
+    }
+
+    button {
+        background-color: variables.$secondary-color;
+        border: none;
+        padding: 0.5rem;
+        border-radius: variables.$border-radius;
+        color: variables.$primary-color;
+        cursor: pointer;
+    }
+
+    .addProduct {
+        align-self: end;
     }
 }
