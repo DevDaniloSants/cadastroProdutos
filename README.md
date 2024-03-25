@@ -1,8 +1,40 @@
-# React + Vite
+# Desafio Oak Tecnologia
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> O front-end do desafio.
 
-Currently, two official plugins are available:
+## 💼 Tecnologias utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Para o desenvolvimento deste site utilizei as seguintes tecnologias:
+
+-   React
+-   JavaScript
+-   Sass
+-   Axios
+
+## 🚀 Instalando IGames
+
+1º Para instalar o projeto, siga estas etapas:
+
+```
+npm install
+```
+
+2º Para rodar o projeto em desenvolvimento:
+
+```
+npm run dev
+```
+
+## :child: Author
+
+<table>
+  <tr>
+    <td align="center">
+        <img src="https://avatars.githubusercontent.com/u/152008168?s=400&u=710379e70ac9c4490d3044ffd12a47092b993f76&v=4" width="100px;" alt="Foto de Danilo Santos no GitHub"/><br>
+        <sub>
+          <b>Danilo Santos</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
