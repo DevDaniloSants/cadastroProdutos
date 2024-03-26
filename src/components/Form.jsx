@@ -11,7 +11,7 @@ const Form = () => {
     const [productValue, setProductValue] = useState(0);
     const [productAvailable, setProductAvailable] = useState("");
 
-    const { handleProductAddition, errors } = useAxiosDB();
+    const { handleProductAddition, errors, loading } = useAxiosDB();
     const navigate = useNavigate();
 
     const clearFields = () => {
@@ -104,7 +104,17 @@ const Form = () => {
                     ))}
                 </div>
             )}
-            <button type="submit">Cadastrar</button>
+            {loading && (
+                <button type="submit" disabled>
+                    Carregando...
+                </button>
+            )}
+            {!loading && (
+                <button type="submit">
+                    Cadastrar
+                </button>
+            )}
+            
         </form>
     );
 };

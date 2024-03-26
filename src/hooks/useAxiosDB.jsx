@@ -36,6 +36,7 @@ const useAxiosDB = () => {
 
     const handleProductAddition = async (data) => {
         try {
+            setLoading(true);
             const response = await axios.post(url, data);
 
             if (response.status === 201) {
@@ -53,6 +54,8 @@ const useAxiosDB = () => {
             } else {
                 console.error("Erro ao processar a solicitação:", error);
             }
+        } finally {
+            setLoading(false);
         }
     };
 
