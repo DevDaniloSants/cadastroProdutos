@@ -1,6 +1,4 @@
-# Desafio Oak Tecnologia
-
-> O front-end do desafio.
+# Desafio
 
 ## 💼 Tecnologias utilizadas
 
