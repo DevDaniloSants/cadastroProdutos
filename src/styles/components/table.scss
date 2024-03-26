@@ -40,23 +40,26 @@
         }
 
         td {
-            display: block;
-            margin-left: 95px;
-            padding: 0.5rem;
-            height: 36px;
+            display: flex;
+            align-items: center;
+            margin-left: 60px;
             position: relative;
+            font-size: clamp(12px, 1vw, 16px);
         }
 
         td::before {
             content: attr(data-th) " ";
             background-color: variables.$secondary-color;
             color: variables.$primary-color;
-            width: 70px;
-            display: inline-block;
+            width: 50px;
             position: absolute;
             top: 0;
-            left: -100px;
-            padding: 0.5rem 1rem;
+            left: -60px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 0.2rem;
         }
     }
 }

@@ -1,12 +1,12 @@
 @use "../variables.scss";
 
 .loader {
-    width: 48px;
-    height: 48px;
+    width: 24px;
+    height: 24px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-40%, -40%);
     border: 5px solid;
     border-color: variables.$secondary-color transparent;
     border-radius: 50%;
